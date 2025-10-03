@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="hello">Hello, I'm SvelteKit app on Dokku named demo-frontend.</div>
+<div class="hello">Hello, I'm SvelteKit app on Coolify</div>
 
 <style lang="scss">
   .hello {
