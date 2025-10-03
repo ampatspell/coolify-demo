@@ -1,5 +1,8 @@
 FROM node:22-alpine AS builder
 
+RUN apt-get update && apt-get install -y \
+  curl
+
 WORKDIR /app
 
 COPY package*.json .
