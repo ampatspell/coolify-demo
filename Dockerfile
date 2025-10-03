@@ -1,10 +1,8 @@
 FROM node:22-alpine AS builder
 
-RUN apk add --update \
-  curl \
-  && RUN rm -rf /var/cache/apk/*
-
 WORKDIR /app
+
+RUN apk --no-cache add curl
 
 COPY package*.json .
 RUN npm ci
